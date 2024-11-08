@@ -13,7 +13,92 @@
     </head>
 
     <body>
+        <header id="header-con">
+
+            <div class="grid-con">
+                <div class="col-start-2 col-end-4 top"> <img src="images/Logo-Design-Earbuds-2.png" alt="logo" height="96px" width="96px"></div>
+
+                <div class="col-start-1 top"><img src="images/hamburger-menu.svg" alt="hamburger-menu" width="40px"></div>
+
+                <div class="col-start-4 col-end-5"> <img src="images/facebook.svg" alt="facebook icon" height="" width=""></div>
+
+                <div class="col-start-5 col-end-6"> <img src="images/twitter.svg" alt="twitter icon" height="" width=""></div>
+
+                <div class="col-start-6 col-end-7"> <img src="images/instagram.svg" alt="instagram icon" height="" width=""></div>
+
+            <h1 class="col-span-full">Feel the <span class="highlight">Beat.</span></h1>
+            <h1 class="col-span-full">Live the <span class="highlight">Moment.</span></h1>
+
+
+            <div class="col-span-6 col-end-8"><img src="images/Zen_Earpods_Concept.png" alt="Zen Earbuds"></div>
+
+            <p class="col-span-full">We provide better solutions to your clients. 
+                The best design for your business and for your life is here.
+                Come to see it and fall in love.</p>
+
+                <button><strong>SEE MORE</strong></button>
+
+            </div>
+        </header>
+
+        <section class="blue">
+            <div class="seperator"></div>
+
+            <div class="grid-con">
+                <div class="col-span-full"><h3 class="black-text">Zen Model</h3></div>
+                <div class="col-start-1 col-end-4" id="zen-model"><img src="images/zen-earbuds-right.png" alt="Zen earbuds right-side"></div>
+
+            </div>
+
+        </section>
+
+
+        <model-viewer src="zen-earbuds.gltf" 
+        ar ar-modes="webxr scene-viewer quick-look"
+        camera-controls tone-mapping="neutral" 
+        poster="poster.webp" shadow-intensity="2" environment-image="tempImageRsMpzf.jpg" exposure="1" skybox-image="tempImageRsMpzf.jpg" shadow-softness="0">
+
+            <button class="Hotspot" slot="hotspot-1" data-position="0.7715789941079266m -2.4062984340627747m 2.986721469066958m" data-normal="0.8019435388236136m 0.18571654757891745m 0.5677991938127659m" data-visibility-attribute="visible">
+
+                <div class="HotspotAnnotation back">
+                <h2>"Quality Sound, Anytime, Anywhere"</h2>
+                    <p>Made for on-the-go lifestyles, these earbuds keep you in the moment with high-quality audio and easy connectivity.</p>
+                <img src="images/sound-waves-24.svg" alt="sound waves">
+            </div>
+            </button>
+            
+            <button class="Hotspot" slot="hotspot-2" data-position="-0.12301372050397652m -3.1940641305460087m 1.75599391349574m" data-normal="0.48607915409414726m -0.24120324105414795m 0.8399690782761547m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation speaker">
+                    <h2>"Unleash the Sound"</h2>
+                    <p>Feel every beat and hear every detail. This speaker delivers crisp audio and deep bass, letting you take the vibe to the next level.</p> 
+                    <img src="images/lightning-bolt.svg" alt="lightning">
+                </div>
+              </button>
+              
+              <button class="Hotspot" slot="hotspot-3" data-position="-3.3766719355732002m -2.5023537401684126m 2.105361821885202m" data-normal="0.7125686900274513m -0.1928332185968894m -0.6745822498392071m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">
+                    <h2>"Power in Your Pocket"</h2>
+                    <p>Compact, portable, and built for booming sound anywhere.</p>
+                    <img src="images/globe-showing.svg" alt="globe">
+                    </div>
+            </button>
+            
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+            <div id="ar-prompt">
+                <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+            </div>
+        </model-viewer>
+        
+        
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
         <script src="js/main.js"></script>
+   
     </body>
 
-</html>
+    </html>
